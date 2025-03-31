@@ -1,0 +1,35 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>Todo List</h1>
+                <div id="clock" class="clock">00:00:00</div>
+            </div>
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </header>
+
+        <div class="todo-input">
+            <input type="text" id="task-input" placeholder="Add a new task...">
+            <div class="alarm-input">
+                <label for="alarm-time">Set Alarm:</label>
+                <input type="datetime-local" id="alarm-time">
+            </div>
+            <button id="add-btn">Add Task</button>
+        </div>
+
+        <ul class="todo-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+          </html>
